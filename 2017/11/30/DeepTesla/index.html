@@ -73,6 +73,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="月六象棋" type="application/atom+xml" />
 
@@ -81,16 +83,39 @@
 
 
 
-<meta name="description" content="机器学习 MachineLearning">
-<meta property="og:type" content="website">
-<meta property="og:title" content="月六象棋">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MIT 6.S094：DeepTesla">
+<meta property="og:url" content="http://yoursite.com/2017/11/30/DeepTesla/index.html">
 <meta property="og:site_name" content="月六象棋">
-<meta property="og:description" content="机器学习 MachineLearning">
+<meta property="og:description" content="I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/img/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/2.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/3.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/4.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/5.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/6.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/7.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/8.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/9.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/10.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/11.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/12.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/13.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/14.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/15.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/16.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/17.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/18.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/19.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/20.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/11/30/DeepTesla/img/21.jpg">
+<meta property="og:updated_time" content="2017-12-08T09:01:28.427Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="月六象棋">
-<meta name="twitter:description" content="机器学习 MachineLearning">
+<meta name="twitter:title" content="MIT 6.S094：DeepTesla">
+<meta name="twitter:description" content="I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法">
+<meta name="twitter:image" content="http://yoursite.com/img/1.jpg">
 
 
 
@@ -120,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/30/DeepTesla/"/>
 
 
 
 
 
-  <title>月六象棋</title>
+  <title>MIT 6.S094：DeepTesla | 月六象棋</title>
   
 
 
@@ -145,8 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -251,9 +275,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/30/DeepTesla/" itemprop="url">MIT 6.S094：DeepTesla</a></h1>
+          <h1 class="post-title" itemprop="name headline">MIT 6.S094：DeepTesla</h1>
         
 
         <div class="post-meta">
@@ -303,9 +325,7 @@
       
 
       
-        
-          
-            <h1 id="i.-问题的定义">I. 问题的定义</h1>
+        <h1 id="i.-问题的定义">I. 问题的定义</h1>
 <h2 id="项目概述">1.1 项目概述</h2>
 <h3 id="项目背景">1.1.1 项目背景</h3>
 <p>　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法；1989年LeCun用卷积神经网络识别手写体；1991年递归神经网络发明；2007年李飞飞创立ImageNet；2012年谷歌大脑识别猫脸（6月），8月谷歌将神经网络引入语音识别，10月Hinton的学生在ImageNet竞赛夺冠，成绩大幅提升；2015年12月微软ResNet图像识别准确率超越人类。在将近50年的发展历史中，其迎来爆发的根本原因就在于现今计算机强大的计算力和海量的数据。现在，这项技术已经延伸到医疗、游戏、公共服务等等和人们生活息息相关的各个层面之中。</p>
@@ -520,8 +540,6 @@
 <p>[ 9 ]：<span id="9">VGG16初始模型的.py文件：https://github.com/fchollet/deep-learning-mdels/blob/master/vgg16.py</span></p>
 <p>[10]：<span id="10">WEIGHTS PATH NO TOP：https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5</span></p>
 
-          
-        
       
     </div>
     
@@ -538,12 +556,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -553,10 +571,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -564,6 +583,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -584,8 +607,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -636,6 +668,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#i.-问题的定义"><span class="nav-number">1.</span> <span class="nav-text">I. 问题的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目概述"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 项目概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目背景"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1 项目背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据集和输入"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.1.2 数据集和输入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题陈述"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 问题陈述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1 问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题定义"><span class="nav-number">1.2.2.</span> <span class="nav-text">1.2.2 问题定义</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#评价指标"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 评价指标</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ii.-分析"><span class="nav-number">2.</span> <span class="nav-text">II. 分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据的探索"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 数据的探索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#探索性可视化"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 探索性可视化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法和技术"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 算法和技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#端到端"><span class="nav-number">2.3.1.</span> <span class="nav-text">2.3.1 端到端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卷积神经网络"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.3.2 卷积神经网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迁移学习"><span class="nav-number">2.3.3.</span> <span class="nav-text">2.3.3 迁移学习</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基准模型"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 基准模型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iii.-方法"><span class="nav-number">3.</span> <span class="nav-text">III. 方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据预处理"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 数据预处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单张图片处理测试"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1 单张图片处理测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原始训练数据与测试数据生成"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2 原始训练数据与测试数据生成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行过程"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 执行过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基准模型改进"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1 基准模型改进</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大转向角度数据添加"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2 大转向角度数据添加</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完善"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 完善</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#构建"><span class="nav-number">3.3.1.</span> <span class="nav-text">3.3.1 构建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#训练"><span class="nav-number">3.3.2.</span> <span class="nav-text">3.3.2 训练</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iv.-结果"><span class="nav-number">4.</span> <span class="nav-text">IV. 结果</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模型的评价与验证"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 模型的评价与验证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#合理性分析"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 合理性分析</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#v.-项目结论"><span class="nav-number">5.</span> <span class="nav-text">V. 项目结论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#结果可视化"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 结果可视化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对项目的思考"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 对项目的思考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#需要作出的改进"><span class="nav-number">5.3.</span> <span class="nav-text">5.3 需要作出的改进</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vi.-参考文献"><span class="nav-number">6.</span> <span class="nav-text">VI. 参考文献</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -783,6 +831,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
