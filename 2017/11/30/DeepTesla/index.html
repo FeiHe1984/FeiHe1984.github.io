@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,12 +68,10 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="深度学习,无人驾驶," />
 
 
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="月六象棋" type="application/atom+xml" />
@@ -83,12 +81,13 @@
 
 
 
-<meta name="description" content="I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》">
+<meta name="description" content="前段时间完成了MIT 6.S094：DeepTesla的小项目（用深度学习预测特斯拉转向角度），做了个总结，分享给大家。 I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上">
+<meta name="keywords" content="深度学习,无人驾驶">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MIT 6.S094：DeepTesla">
 <meta property="og:url" content="http://yoursite.com/2017/11/30/DeepTesla/index.html">
 <meta property="og:site_name" content="月六象棋">
-<meta property="og:description" content="I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法">
+<meta property="og:description" content="前段时间完成了MIT 6.S094：DeepTesla的小项目（用深度学习预测特斯拉转向角度），做了个总结，分享给大家。 I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/img/1.jpg">
 <meta property="og:image" content="http://yoursite.com/img/2.jpg">
@@ -111,10 +110,10 @@
 <meta property="og:image" content="http://yoursite.com/img/19.jpg">
 <meta property="og:image" content="http://yoursite.com/img/20.jpg">
 <meta property="og:image" content="http://yoursite.com/img/21.jpg">
-<meta property="og:updated_time" content="2017-12-08T09:14:58.907Z">
+<meta property="og:updated_time" content="2017-12-10T02:39:12.143Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MIT 6.S094：DeepTesla">
-<meta name="twitter:description" content="I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法">
+<meta name="twitter:description" content="前段时间完成了MIT 6.S094：DeepTesla的小项目（用深度学习预测特斯拉转向角度），做了个总结，分享给大家。 I. 问题的定义 1.1 项目概述 1.1.1 项目背景 　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，">
 <meta name="twitter:image" content="http://yoursite.com/img/1.jpg">
 
 
@@ -123,7 +122,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -186,7 +185,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">机器学习和人工智能那点事</p>
+        <p class="site-subtitle">机器学习和人工智能</p>
       
   </div>
 
@@ -216,12 +215,52 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            站点地图
           </a>
         </li>
       
@@ -298,6 +337,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/深度学习/" itemprop="url" rel="index">
+                    <span itemprop="name">深度学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -325,10 +386,11 @@
       
 
       
-        <h1 id="i.-问题的定义">I. 问题的定义</h1>
+        <p><strong>前段时间完成了MIT 6.S094：DeepTesla的小项目（用深度学习预测特斯拉转向角度），做了个总结，分享给大家。</strong></p>
+<h1 id="i.-问题的定义">I. 问题的定义</h1>
 <h2 id="项目概述">1.1 项目概述</h2>
 <h3 id="项目背景">1.1.1 项目背景</h3>
-<p>　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法；1989年LeCun用卷积神经网络识别手写体；1991年递归神经网络发明；2007年李飞飞创立ImageNet；2012年谷歌大脑识别猫脸（6月），8月谷歌将神经网络引入语音识别，10月Hinton的学生在ImageNet竞赛夺冠，成绩大幅提升；2015年12月微软ResNet图像识别准确率超越人类。在将近50年的发展历史中，其迎来爆发的根本原因就在于现今计算机强大的计算力和海量的数据。现在，这项技术已经延伸到医疗、游戏、公共服务等等和人们生活息息相关的各个层面之中。</p>
+<p>　　近年来，深度学习神经网络在计算机视觉领域，特别是图像识别上取得的突破性进展无疑是科技界的热点之一。诚然，神经网络并非新兴技术，从时间线上可以看出它的发展脉络：1958年康奈尔心理学家罗森布拉特推出感知机；1963年，弗拉基米尔·万普尼克在他的书《支持向量机》中首次发表反向传播算法；1986年Hinton等人发明训练多重神经网络纠错的方法；1989年LeCun用卷积神经网络识别手写体；1991年递归神经网络发明；2007年李飞飞创立ImageNet；2012年谷歌大脑识别猫脸（6月），8月谷歌将神经网络引入语音识别，10月Hinton的学生在ImageNet竞赛夺冠，成绩大幅提升；2015年12月微软ResNet图像识别准确率超越人类。在将近50年的发展历史中，其迎来爆发的根本原因就在于现今计算机强大的计算力和海量的数据。现在，这项技术已经延伸到医疗、游戏、公共服务等等和人们生活息息相关的各个层面之中。 <a id="more"></a></p>
 <p>　　在众多深度学习神经网络应用场景之中，无人驾驶（自动驾驶）无疑是中短期内最有前景的之一。现阶段，以摄像头作为道路图像传感器，结合人工智能和视觉处理技术实现无人驾驶（自动驾驶）在成本上体现了巨大的优势。不同的神经网络模型已经应用到车辆转向控制和速度控制中。如英伟达（NVIDIA）提出的端到端<a href="#1">[1]</a>（ end to end）卷积神经网络模型（Convolutional Neural Network，以下简称CNN或ConvNet ）；Comma.ai提出的变分自动编码器<a href="#2">[2]</a>（Variational Autoencoder，以下简称VAE）及基于生成式对抗网络（GANgenerative adversarial network，以下简称GAN），用于实现道路视频预测的代价函数（Cost Function），在此基础上结合了递归神经网络（ Recurrent Neural Networks，以下简称RNN）的转换模型（Transition Model）；最近，在UDACITY的开源挑战项目&quot;Teaching a Machine to Steer a Car&quot;<a href="#3">[3]</a>，第一名的”Team Komanda“利用了循环神经网络序列到序列模型（RNN seq2seq, Recurrent Neural Networks Sequence to Sequence），使用CNN结合长短期记忆网络（Long Short-Term Memory，以下简称LSTM）实现了一个不同长度序列输入图像到输出转向角度的映射模型。</p>
 <p>　　在这些已经实现的案列中，与传统的方法相比，神经网络和深度学习展现了惊人的效率和优势。本项目就是基于MIT 6.S094 这门公开课中的Tesla数据集训练深度学习模型，根据车辆的前置相机所拍摄的路况图像，实现对车辆转向角度的预测，从而对深度学习模型有一个初步的探索。</p>
 <h3 id="数据集和输入">1.1.2 数据集和输入</h3>
@@ -554,6 +616,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/深度学习/" rel="tag"># 深度学习</a>
+          
+            <a href="/tags/无人驾驶/" rel="tag"># 无人驾驶</a>
+          
+        </div>
+      
 
       
       
@@ -639,7 +709,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -716,7 +804,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
