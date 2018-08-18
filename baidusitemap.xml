@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/01/10/ml-2_1Linear/</loc>
+    <lastmod>2018-08-18T06:53:05.152Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习总结（二）：线性模型</title>
+        <pubTime>2018-01-09T16:00:00.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+        <tag>线性模型</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://yoursite.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/01/10/ml-1/</loc>
+    <lastmod>2018-08-18T06:50:48.529Z</lastmod>
+    <data>
+        <display>
+        <title>机器学习总结（一）：机器学习基础</title>
+        <pubTime>2018-01-09T16:00:00.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+        <tag>机器学习基础</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="http://yoursite.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/11/11/A/</loc>
     <lastmod>2017-12-12T09:50:14.915Z</lastmod>
     <data>
